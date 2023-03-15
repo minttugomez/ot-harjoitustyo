@@ -1,0 +1,12 @@
+kurssit/
+└── ot2023
+    └── viikko1
+        ├── eka.txt
+        ├── kolmas.txt
+        ├── stuff
+        │   └── jokin_tiedosto
+        └── tiedostoja
+            ├── file22
+            └── file3
+
+4 directories, 5 files

@@ -1,0 +1,64 @@
+commit bc7c69b26fc6b1cac9c9b95f9668f7288e5a13dd
+Author: Jämsä Minttu M K <jaminttu@melkki.cs.helsinki.fi>
+Date:   Wed Mar 15 14:08:50 2023 +0200
+
+    uusi hakemisto
+
+ tiedostoja/file22 | 1 +
+ tiedostoja/file3  | 1 +
+ 2 files changed, 2 insertions(+)
+
+commit 9f2729301a88f3847dde063846f5fe5a57c0aadd
+Author: Jämsä Minttu M K <jaminttu@melkki.cs.helsinki.fi>
+Date:   Wed Mar 15 14:05:10 2023 +0200
+
+    uusi hakemisto
+
+ stuff/jokin_tiedosto | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit 1784af14206b616615f48c6f88be723d321a1c96
+Author: Jämsä Minttu M K <jaminttu@melkki.cs.helsinki.fi>
+Date:   Wed Mar 15 14:02:39 2023 +0200
+
+    uusi tiedosto
+
+ kolmas.txt | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit 803c33b56c2451d9ec4f4de39b03c507b4ae6d3c
+Author: Jämsä Minttu M K <jaminttu@melkki.cs.helsinki.fi>
+Date:   Wed Mar 15 12:53:30 2023 +0200
+
+    nimen muutos
+
+ tiedosto.txt => eka.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 16a9290582fa6da9cf142ff31c5d7f0122eeca25
+Author: Jämsä Minttu M K <jaminttu@melkki.cs.helsinki.fi>
+Date:   Wed Mar 15 12:51:14 2023 +0200
+
+    tiedosto poistettu
+
+ toinen.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 7d85fb65dc1ee2d75199612a7330336493fce673
+Author: Jämsä Minttu M K <jaminttu@melkki.cs.helsinki.fi>
+Date:   Wed Mar 15 11:23:50 2023 +0200
+
+    muutos ja lisäys
+
+ tiedosto.txt | 1 +
+ toinen.txt   | 0
+ 2 files changed, 1 insertion(+)
+
+commit 7a80d4d858d377d6c8b6f2c59eb25d174ba022c9
+Author: Jämsä Minttu M K <jaminttu@melkki.cs.helsinki.fi>
+Date:   Wed Mar 15 11:00:42 2023 +0200
+
+    tiedosto.txt luotu
+
+ tiedosto.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
