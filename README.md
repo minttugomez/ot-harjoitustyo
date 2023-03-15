@@ -10,6 +10,8 @@ koska olen harjoitellut peruuttamisia jo aikaisemmin.
 
 Linkit:
 
-komentorivi.txt  -
+komentorivi.txt
+https://github.com/minttugomez/ot-harjoitustyo/blob/master/laskarit/viikko1/komentorivi.txt
 
-gitlog.txt       -
+gitlog.txt
+https://github.com/minttugomez/ot-harjoitustyo/blob/master/laskarit/viikko1/gitlog.txt
