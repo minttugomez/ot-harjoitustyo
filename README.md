@@ -9,5 +9,7 @@ sellaiset välivaiheet tekemättä, mistä näin että ne perutaan seuraavaksi,
 koska olen harjoitellut peruuttamisia jo aikaisemmin.
 
 Linkit:
+
 komentorivi.txt  -
+
 gitlog.txt       -
