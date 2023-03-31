@@ -1,6 +1,6 @@
 ## Ohjelmistotekniikka
 ### Dokumentaatio
-[Määrittelydokumentti]
+[Määrittelydokumentti](https://github.com/minttugomez/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
 
 ### Tehtävät
 #### Viikko 1
