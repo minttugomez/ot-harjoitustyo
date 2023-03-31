@@ -1,6 +1,6 @@
 # Ohjelmistotekniikka
 ## Dokumentaatio
-[Määrittelydokumentti](https://github.com/minttugomez/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
+[Vaatimusmäärittely](https://github.com/minttugomez/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
 
 [Työaikakirjanpito](https://github.com/minttugomez/ot-harjoitustyo/blob/master/dokumentaatio/tyoaikakirjanpito.md)
 
@@ -12,6 +12,6 @@ Viikko 1:
 Viikko 2:
 [maksukortti](https://github.com/minttugomez/ot-harjoitustyo/tree/master/laskarit/viikko2/maksukortti),
 [unicafe](https://github.com/minttugomez/ot-harjoitustyo/tree/master/laskarit/viikko2/unicafe),
-[määrittelydokumentti](https://github.com/minttugomez/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
+[vaatimusmäärittely](https://github.com/minttugomez/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
 
 Viikko 3
