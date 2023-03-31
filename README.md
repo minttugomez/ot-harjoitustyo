@@ -1,4 +1,7 @@
 ## Ohjelmistotekniikka
+### Dokumentaatio
+[Määrittelydokumentti]
+
 ### Tehtävät
 #### Viikko 1
 
