@@ -14,7 +14,3 @@ Viikko 2:
 [unicafe](https://github.com/minttugomez/ot-harjoitustyo/tree/master/laskarit/viikko2/unicafe),
 [määrittelydokumentti](https://github.com/minttugomez/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
 
-### Työaikakirjanpito
-Viikko 2: 1h
-
-Viikko 3:
