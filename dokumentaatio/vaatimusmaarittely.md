@@ -13,4 +13,4 @@ Peli, joka jatkuu, kunnes pelaaja häviää
 - Pelin tallentaminen
 ## Jatkokehitysideoita
 - Kaksinpeli, jossa kilpallaan toisia vastaan
-## Lähteet
+
