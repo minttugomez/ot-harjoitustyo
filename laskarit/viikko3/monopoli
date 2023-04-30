@@ -1,0 +1,18 @@
+graph monopoli;
+	monopoli-->pelilauta;
+	monopoli-->pelaajat(2-8);
+	pelilauta-->peliruudut(40);
+	pelisiirto-->pelilauta;
+	pelisiirto-->noppa(2);
+	pelisiirto-->pelinappulat;
+	pelinappulat-->pelaajat(2-8)
+	
+	aloitusruutu-->peliruudut(40)
+	vankila-->peliruudut(40)
+	sattuma-->peliruudut(40)
+	yhteismaa-->peliruudut(40)
+	asemat-->peliruudut(40)
+	laitokset-->peliruudut(40)
+	kadut-->peliruudut(40)
+
+	talot-->kadut
