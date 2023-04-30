@@ -15,4 +15,4 @@ Viikko 2:
 [vaatimusmäärittely](https://github.com/minttugomez/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
 
 Viikko 3:
-[monopoli]()
+[monopoli](https://github.com/minttugomez/ot-harjoitustyo/blob/master/laskarit/viikko3/monopoli)
