@@ -14,4 +14,5 @@ Viikko 2:
 [unicafe](https://github.com/minttugomez/ot-harjoitustyo/tree/master/laskarit/viikko2/unicafe),
 [vaatimusmäärittely](https://github.com/minttugomez/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
 
-Viikko 3
+Viikko 3:
+[monopoli]()
