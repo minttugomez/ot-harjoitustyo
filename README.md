@@ -16,7 +16,8 @@ Viikko 2:
 
 Viikko 3:
 [monopoli](https://github.com/minttugomez/ot-harjoitustyo/blob/master/laskarit/viikko3/monopoli),
-[sekvenssikaavio](https://github.com/minttugomez/ot-harjoitustyo/blob/master/laskarit/viikko3/sekvenssikaavio)
+[sekvenssikaavio](https://github.com/minttugomez/ot-harjoitustyo/blob/master/laskarit/viikko3/sekvenssikaavio),
+[laajempi_sekvenssikaavio](https://github.com/minttugomez/ot-harjoitustyo/blob/master/laskarit/viikko3/laajempi_sekvenssikaavio)
 
 Viikko 4:
 
