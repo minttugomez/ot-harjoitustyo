@@ -15,9 +15,9 @@ Viikko 2:
 [vaatimusmäärittely](https://github.com/minttugomez/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
 
 Viikko 3:
-[monopoli](https://github.com/minttugomez/ot-harjoitustyo/blob/master/laskarit/viikko3/monopoli),
-[sekvenssikaavio](https://github.com/minttugomez/ot-harjoitustyo/blob/master/laskarit/viikko3/sekvenssikaavio),
-[laajempi_sekvenssikaavio](https://github.com/minttugomez/ot-harjoitustyo/blob/master/laskarit/viikko3/laajempi_sekvenssikaavio)
+[monopoli](https://github.com/minttugomez/ot-harjoitustyo/blob/master/laskarit/viikko3/monopoli.md),
+[sekvenssikaavio](https://github.com/minttugomez/ot-harjoitustyo/blob/master/laskarit/viikko3/sekvenssikaavio.md),
+[laajempi_sekvenssikaavio](https://github.com/minttugomez/ot-harjoitustyo/blob/master/laskarit/viikko3/laajempi_sekvenssikaavio.md)
 
 Viikko 4:
 
