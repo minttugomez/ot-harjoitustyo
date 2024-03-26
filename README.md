@@ -1,5 +1,9 @@
 # Ohjelmistotekniikka, harjoitustyö
 
-Teen sovelluksen, jossa *terapia-asiakkaat* voivat olla yhteydessä omaan *terapeuttiinsa* ja jossa *terapeutti* voi jakaa **infoa ja dokumentteja** *asiakkaidensa* kanssa.
+Teen muistipelin, jota voi pelata moninpelinä samalta tietokoneelta.
 
 [laskarit](https://github.com/minttugomez/ot-harjoitustyo/tree/master/laskarit)
+
+[työaikakirjanpito](https://github.com/minttugomez/ot-harjoitustyo/tree/master/dokumentaatio/maarittelydokumentti.md)
+
+[määrittelydokumentti](https://github.com/minttugomez/ot-harjoitustyo/tree/master/dokumentaatio/maarittelydokumentti.md)
