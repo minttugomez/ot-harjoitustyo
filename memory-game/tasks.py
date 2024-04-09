@@ -6,9 +6,7 @@ def start(ctx):
 
 @task
 def test(ctx):
-    ctx.run("poetry shell", pty=True)
     ctx.run("pytest src/tests", pty=True)
-    ctx.run("exit", pty=True)
 
 @task
 def coverage(ctx):
