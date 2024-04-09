@@ -12,22 +12,10 @@ Perinteinen muistipeli tietokoneversiona. Muistipelissä on 72 korttia, joissa o
 
 ## Asennus
 
-1. Asenna riippuvuudet komennolla:
+Asenna riippuvuudet komennolla:
 
 ```bash
 poetry install
-```
-
-2. Suorita vaadittavat alustustoimenpiteet komennolla:
-
-```bash
-poetry run invoke build
-```
-
-3. Käynnistä sovellus komennolla:
-
-```bash
-poetry run invoke start
 ```
 
 ## Komentorivitoiminnot
