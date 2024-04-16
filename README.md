@@ -10,6 +10,8 @@ Perinteinen muistipeli tietokoneversiona. Muistipelissä on 72 korttia, joissa o
 
 - [changelog](https://github.com/minttugomez/ot-harjoitustyo/tree/master/memory-game/dokumentaatio/changelog.md)
 
+- [arkkitehtuuri](https://github.com/minttugomez/ot-harjoitustyo/tree/master/memory-game/dokumentaatio/arkkitehtuuri.md)
+
 ## Asennus
 
 Asenna riippuvuudet komennolla:
@@ -22,7 +24,7 @@ poetry install
 
 ### Ohjelman suorittaminen
 
-Ohjelman pystyy suorittamaan komennolla:
+Ohjelman voi suorittaa komennolla:
 
 ```bash
 poetry run invoke start
@@ -30,7 +32,7 @@ poetry run invoke start
 
 ### Testaus
 
-Testit suoritetaan komennolla:
+Testit voi suorittaa komennolla:
 
 ```bash
 poetry run invoke test
@@ -45,3 +47,19 @@ poetry run invoke coverage-report
 ```
 
 Raportti generoituu _htmlcov_-hakemistoon.
+
+### Laatutarkastus
+
+Pylint-tarkastuksen voi suorittaa komennolla:
+
+```bash
+poetry run invoke lint
+```
+
+### Automaattinen formatointi
+
+Automaattisen formatoinnin voi suorittaa komennolla:
+
+```bash
+poetry run invoke format
+```
