@@ -12,6 +12,10 @@ Perinteinen muistipeli tietokoneversiona. Muistipelissä on 72 korttia, joissa o
 
 - [arkkitehtuuri](https://github.com/minttugomez/ot-harjoitustyo/tree/master/memory-game/dokumentaatio/arkkitehtuuri.md)
 
+## Release
+
+[Viikko 5](https://github.com/minttugomez/ot-harjoitustyo/releases/tag/viikko5)
+
 ## Asennus
 
 Asenna riippuvuudet komennolla:
