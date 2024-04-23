@@ -5,6 +5,8 @@ class MemoryGame:
         self.cards = cards
         self.grid = [[], [], [], [], [], [], [], []]
         self.players = 0
+        self.points = {}
+        self.started = False
 
     def validate_cards(self):
         length = len(self.cards)
@@ -38,4 +40,16 @@ class MemoryGame:
         pass
 
     def change_players(self, players):
-        self.players = players
+        if players > 1 and players < 5:
+            self.players = players
+            self.points = {i+1: 0 for i in range(players)}
+
+    def get_points(self):
+        return self.points
+
+    def add_points(self, player):
+        if player in self.points:
+            self.points[player] += 1
+
+    def is_started(self):
+        return self.started

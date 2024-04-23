@@ -69,3 +69,25 @@ class TestMemorygame(unittest.TestCase):
                                                 10, 11, 12, 13, 14, 15, 16, 17, 18,
                                                 19, 20, 21, 22, 23, 24, 25, 26, 27,
                                                 28, 29, 30, 31, 32, 33, 34, 35, 36])
+        
+    def test_too_many_players(self):
+        self.memorygame.change_players(5)
+        self.assertEqual(self.memorygame.players, 0)
+
+    def test_negative_players(self):
+        self.memorygame.change_players(-1)
+        self.assertEqual(self.memorygame.players, 0)
+
+    def test_get_points(self):
+        self.memorygame.change_players(2)
+        self.assertEqual(self.memorygame.get_points(), {1:0, 2:0})
+
+    def test_add_points(self):
+        self.memorygame.change_players(2)
+        self.memorygame.add_points(2)
+        self.assertEqual(self.memorygame.get_points(), {1:0, 2:1})
+
+    def test_add_points_to_nonexistent_player(self):
+        self.memorygame.change_players(2)
+        self.memorygame.add_points(3)
+        self.assertEqual(self.memorygame.get_points(), {1:0, 2:0})

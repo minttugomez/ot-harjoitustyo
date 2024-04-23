@@ -16,3 +16,10 @@
 - MemoryGame-luokkaan lisätty duplicate_cards funktio korttien parien luomiselle
 - Duplicate_cards-funktiolle lisätty testi
 - Luotu UI-luokka käyttöliittymän toteuttamiselle sekä siihen liittyvät setup, start ja draw_grid -funktiot
+
+## Viikko 5
+
+- MemoryGame-luokkaan lisätty funktio pisteiden laskulle
+- Käyttöliittymään laitettu näkymään pistetilanne
+- Lisätty pisteytykseen liittyvät testit
+- Lisätty menutaulu käyttöliittymään
