@@ -40,8 +40,8 @@ class TestMemorygame(unittest.TestCase):
                                                 [19, 20, 21, 22, 23, 24, 25, 26, 27],
                                                 [28, 29, 30, 31, 32, 33, 34, 35, 36]])
         
-    def test_start(self):
-        self.memorygame.start()
+    def test_setup(self):
+        self.memorygame.setup()
         self.assertEqual(len(self.memorygame.grid), 8)
         self.assertNotEqual(self.memorygame.grid, [[1, 2, 3, 4, 5, 6, 7, 8, 9],
                                                 [10, 11, 12, 13, 14, 15, 16, 17, 18],
@@ -51,9 +51,16 @@ class TestMemorygame(unittest.TestCase):
                                                 [10, 11, 12, 13, 14, 15, 16, 17, 18],
                                                 [19, 20, 21, 22, 23, 24, 25, 26, 27],
                                                 [28, 29, 30, 31, 32, 33, 34, 35, 36]])
+    
+    def test_start(self):
+        self.memorygame.start()
+        is_started = self.memorygame.is_started()
+        self.assertEqual(is_started, True)
 
     def test_end(self):
+        self.memorygame.change_players(2)
         self.memorygame.end()
+        self.assertEqual(self.memorygame.players, 0)
 
     def test_change_players(self):
         self.memorygame.change_players(4)
@@ -91,3 +98,7 @@ class TestMemorygame(unittest.TestCase):
         self.memorygame.change_players(2)
         self.memorygame.add_points(3)
         self.assertEqual(self.memorygame.get_points(), {1:0, 2:0})
+
+    def test_is_started(self):
+        is_started = self.memorygame.is_started()
+        self.assertEqual(is_started, False)

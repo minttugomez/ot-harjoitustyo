@@ -30,17 +30,20 @@ class MemoryGame:
         self.grid = [self.cards[i:i+cols]
                      for i in range(0, len(self.cards), cols)]
 
-    def start(self):
+    def setup(self):
         self.validate_cards()
         self.duplicate_cards()
         self.shuffle_cards()
         self.create_grid(9)
 
+    def start(self):
+        self.started = True
+
     def end(self):
-        pass
+        self.players = 0
 
     def change_players(self, players):
-        if players > 1 and players < 5:
+        if 1 < players < 5:
             self.players = players
             self.points = {i+1: 0 for i in range(players)}
 

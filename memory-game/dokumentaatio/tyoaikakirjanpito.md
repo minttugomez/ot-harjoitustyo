@@ -12,3 +12,6 @@ Tunnit: 8
 
 ## Viikko 5
 Tunnit: 4
+
+## Viikko 6
+Tunnit: 6

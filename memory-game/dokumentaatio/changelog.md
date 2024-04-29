@@ -23,3 +23,14 @@
 - Käyttöliittymään laitettu näkymään pistetilanne
 - Lisätty pisteytykseen liittyvät testit
 - Lisätty menutaulu käyttöliittymään
+
+## Viikko 6
+
+- Dokumentaatioon päivitetty neuvo komentojen suorittamisesta memorygame-kansion sisällä
+- Luotu logiikka nappien painallukselle
+- Toteutettu napin tummentuminen hetkellisesti klikattaessa
+- Toteutettu pelaajamäärän muuttuminen pelaajanappia klikatessa
+- Toteutettu pelin alkaminen "start"-nappia klikatessa
+- Lisätty ominaisuus, joka näyttää, mikä pelaajamäärä on valittuna
+- Päivitetty testit muokattuihin funktioihin
+- Luotu testit end- ja setup-funktioille
