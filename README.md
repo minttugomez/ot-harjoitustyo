@@ -18,6 +18,8 @@ Perinteinen muistipeli tietokoneversiona. Muistipelissä on 72 korttia, joissa o
 
 ## Asennus
 
+Asennus tulee tehdä memorygame-kansion sisällä.
+
 Asenna riippuvuudet komennolla:
 
 ```bash
@@ -25,6 +27,8 @@ poetry install
 ```
 
 ## Komentorivitoiminnot
+
+Komentorivitoiminnot tulee suorittaa memorygame-kansion sisällä.
 
 ### Ohjelman suorittaminen
 

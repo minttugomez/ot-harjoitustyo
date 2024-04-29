@@ -76,7 +76,7 @@ class UI:
     def create_grid(self):
 
         for i, row in enumerate(self.memorygame.grid):
-            for j in enumerate(row):
+            for j, card in enumerate(row):
 
                 x = j * 110 + 30
                 y = i * 110 + 100
