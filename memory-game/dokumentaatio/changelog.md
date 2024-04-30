@@ -34,3 +34,8 @@
 - Lisätty ominaisuus, joka näyttää, mikä pelaajamäärä on valittuna
 - Päivitetty testit muokattuihin funktioihin
 - Luotu testit end- ja setup-funktioille
+- Lisätty teksti "choose players first" mikäli peliä yritetään aloittaa valitsematta pelaajamäärä
+- Lisätty vuorokierto memorygame-luokkaan
+- Lisätty logiikka korttien kääntymiselle
+- Estetty enemmän kuin kahden kortin klikkaaminen vuorolla
+- Päivitetty memorygame-luokan testit ja lisätty testit uusille funktioille

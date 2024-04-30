@@ -14,4 +14,4 @@ Tunnit: 8
 Tunnit: 4
 
 ## Viikko 6
-Tunnit: 6
+Tunnit: 11

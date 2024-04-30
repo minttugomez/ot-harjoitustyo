@@ -41,6 +41,9 @@ class Button:
         darkened_color = tuple(max(0, component - 50) for component in color)
         return darkened_color
 
+    def change_picture(self, picture):
+        self.picture = picture
+
 class UI:
     def __init__(self, memorygame=MemoryGame):
         self.memorygame = memorygame
@@ -53,6 +56,10 @@ class UI:
         circle = pygame.image.load(circle_path)
         self.circle = pygame.transform.scale(circle, (100, 100))
 
+        self.error_message = False
+        self.reset_cards_flag = False
+        self.reset_cards_time = 0
+
         self.screen_height = 1000
         self.screen_width = 1040
 
@@ -61,6 +68,8 @@ class UI:
         pygame.init()
 
         self.font = pygame.font.Font(None, 80)
+        self.smaller_font = pygame.font.Font(None, 50)
+
         self.buttons = []
         self.menu_buttons = []
 
@@ -125,15 +134,14 @@ class UI:
 
         running = True
         while running:
+            current_time = pygame.time.get_ticks()
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
                     running = False
                 if not self.memorygame.is_started():
-                    for button in self.menu_buttons:
-                        button.handle_event(event)
+                    self.handle_buttons(self.menu_buttons, event)
                 else:
-                    for button in self.buttons:
-                        button.handle_event(event)
+                    self.handle_buttons(self.buttons, event)
 
             self.display.fill((200, 200, 200))
             for button in self.buttons:
@@ -144,18 +152,43 @@ class UI:
                 self.draw_menu_screen()
                 for button in self.menu_buttons:
                     button.draw()
-                self.draw_circle()
+            if self.error_message:
+                error_message = "choose players first"
+                text_surface = self.smaller_font.render(error_message, True, (255, 0, 0))
+                self.display.blit(text_surface, (350, 660))
+            self.draw_circle()
+
+            if self.reset_cards_flag and current_time >= self.reset_cards_time:
+                for button in self.buttons:
+                    button.change_picture(self.questionmark)
+                self.reset_cards_flag = False
+                self.memorygame.next_turn()
 
             pygame.display.update()
 
         pygame.quit()
 
+    def handle_buttons(self, buttons, event):
+        for button in buttons:
+            button.handle_event(event)
+
     def start_game(self):
         if self.memorygame.players != 0:
             self.memorygame.start()
+            self.error_message = False
+        else:
+            self.error_message = True
 
     def handle_card_click(self, row, col):
-        pass
+        turn_over = self.memorygame.choose_card(row, col, self.memorygame.get_turn)
+        picture = self.memorygame.get_picture(row, col)
+        button = self.buttons[(row)*9 + col]
+        if self.memorygame.get_opened_cards() <= 2:
+            button.change_picture(picture)
+
+        if turn_over:
+            self.reset_cards_time = pygame.time.get_ticks() + 1000
+            self.reset_cards_flag = True
 
     def handle_player_select(self, players):
         self.memorygame.change_players(players)
@@ -177,9 +210,16 @@ class UI:
         self.display.blit(self.font.render("Players:", True, (0, 0, 0)), (250, 400))
 
     def draw_circle(self):
+        if not self.memorygame.is_started():
+            if self.memorygame.players:
+                x = 490 + (self.memorygame.players- 2) * 100
+                y = 375
 
-        if self.memorygame.players:
-            x = 490 + (self.memorygame.players- 2) * 100
-            y = 375
+                self.display.blit(self.circle, (x, y))
+        else:
+            rescaled_circle = pygame.transform.scale(self.circle, (200, 80))
 
-            self.display.blit(self.circle, (x, y))
+            x = 20 + (self.memorygame.get_turn()-1) * 260
+            y = 15
+
+            self.display.blit(rescaled_circle, (x, y))
