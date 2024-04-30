@@ -15,6 +15,7 @@ Perinteinen muistipeli tietokoneversiona. Muistipelissä on 72 korttia, joissa o
 ## Release
 
 - [Viikko 5](https://github.com/minttugomez/ot-harjoitustyo/releases/tag/viikko5)
+- [Viikko 6](https://github.com/minttugomez/ot-harjoitustyo/releases/tag/viikko6)
 
 ## Asennus
 
