@@ -20,8 +20,10 @@ class MemoryGame:
         self.players = 0
         self.points = {}
         self.started = False
+        self.ended = False
         self.turn = 0
         self.opened_cards = []
+        self.match = []
 
         pygame.init()
         self.font = pygame.font.Font(None, 100)
@@ -30,23 +32,27 @@ class MemoryGame:
 
         """ Makes sure there is right amount of cards.
         If there's too many, the extra ones are removed. If there is too little, new ones are added.
+        Index is added to every single card to keep track of pairs.
 
         Returns:
             cards: validated cards """
 
         length = len(self.cards)
-        if length == 36:
-            pass
-        elif length < 36:
+
+        if length < 36:
             for i in range(36-length):
                 self.cards.append(i+length+1)
-        else:
+        if length > 36:
             self.cards = self.cards[:36]
+
+        for i, card in enumerate(self.cards):
+            self.cards[i] = (card, i+1)
+
         return self.cards
 
     def duplicate_cards(self):
 
-        """ The 36 cards are turned into 72 cards, each of which has a pair. """
+        """ The 36 cards are turned into 72 cards, each of which has a pair marked with index. """
 
         cards_copy = self.cards.copy()
         self.cards.extend(cards_copy)
@@ -64,7 +70,8 @@ class MemoryGame:
         Args:
             cols: in how many colums the cards will be divided into (default=9) """
 
-        self.grid = [[self.font.render(str(card), True, (0, 0, 0)) for card in self.cards[i:i+cols]]
+        self.grid = [[(self.font.render(str(card[0]), True, (0, 0, 0)),
+                    card[1]) for card in self.cards[i:i+cols]]
                     for i in range(0, len(self.cards), cols)]
 
     def setup(self):
@@ -81,13 +88,24 @@ class MemoryGame:
         """ Updates the game status and gives the turn to the first player. """
 
         self.started = True
+        self.ended = False
         self.next_turn()
 
     def end(self):
 
-        """ Resets the players when the game is over. """
+        """ Updates the status to show the end screen. """
 
+        self.ended = True
+        self.started = False
+
+    def back_to_menu(self):
+
+        """ Updates the status to show the start screen. Resets player stats """
+
+        self.ended = False
+        self.started = False
         self.players = 0
+        self.points = {}
 
     def choose_card(self, row, col, player):
 
@@ -102,27 +120,46 @@ class MemoryGame:
             player: whose turn it is
 
         Returns:
-            True if the two cards were opened, False if only one card was opened  """
+            True if the two cards were opened, False if only one card was opened """
 
         if len(self.opened_cards) == 0:
-            self.opened_cards.append((row, col, self.grid[row-1][col-1]))
+            self.opened_cards.append((row, col, self.grid[row][col]))
         else:
             if row != self.opened_cards[0][0] or col != self.opened_cards[0][1]:
-                self.opened_cards.append((row, col, self.grid[row-1][col-1]))
+                self.opened_cards.append((row, col, self.grid[row][col]))
 
         if len(self.opened_cards) == 2:
-            match = self.check_match()
+            match = self.check_match(self.opened_cards[0], self.opened_cards[1])
             if match:
                 self.add_points(player)
             return True
         return False
 
-    def check_match(self):
+    def check_match(self, card1, card2):
 
         """ Checks if the cards are a match.
-            -- logic not created yet-- """
+            
+        Args:
+            card1: first chosen card
+            card2: second chosen card
+        
+        Returns:
+            True if cards were a pair, False if they were not """
 
-        return False # add logic here later
+        if card1[2][1] == card2[2][1]:
+            self.match.append(card1)
+            self.match.append(card2)
+            return True
+        return False
+
+    def get_match(self):
+
+        """ Returns last two cards if they were a match
+        
+        Returns:
+            match: last two cards if they were a match, otherwise an empty list """
+
+        return self.match
 
     def change_players(self, players):
 
@@ -153,26 +190,44 @@ class MemoryGame:
             player: which player the point is added to """
 
         if player in self.points:
-            self.points[player] += 1
+            points = self.points[player] + 1
+            self.points[player] = points
 
     def is_started(self):
 
-        """ Returns the game status.
+        """ Returns the game starting status.
 
         Returns:
             started: True if game is started, False if it's not  """
 
         return self.started
 
+    def is_ended(self):
+
+        """ Returns the game ending status.
+
+        Returns:
+            ended: True if game is ended, False if it's not  """
+
+        return self.ended
+
     def next_turn(self):
 
         """ Switches the turn to the next player. """
 
         self.opened_cards = []
+        self.match = []
         if self.turn < self.players:
             self.turn += 1
         else:
             self.turn = 1
+
+    def new_turn(self):
+
+        """ Gives the turn back to the same player. """
+
+        self.opened_cards = []
+        self.match = []
 
     def get_turn(self):
 
@@ -193,7 +248,7 @@ class MemoryGame:
         Returns:
             picture as a surface  """
 
-        return self.grid[row-1][col-1]
+        return self.grid[row][col][0]
 
     def get_opened_cards(self):
 

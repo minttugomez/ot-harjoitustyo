@@ -39,3 +39,15 @@
 - Lisätty logiikka korttien kääntymiselle
 - Estetty enemmän kuin kahden kortin klikkaaminen vuorolla
 - Päivitetty memorygame-luokan testit ja lisätty testit uusille funktioille
+
+## Viiko 7
+
+- Lisätty kortteihin indeksi, joka on pareilla sama
+- Lisätty logiikka parien tarkastukselle
+- Lisätty logiikka uuden vuoron saamiselle parin jälkeen
+- Korjattu pisteiden lasku
+- Lisätty logiikka parien poistumiselle pöydältä
+- Lisätty logiikka pelin päättymiselle ja pistetuloksen näyttämiselle
+- Korjattu muutetut testit
+- Lisätty testit uusille ominaisuuksille
+- Korjattu bugi, jossa nopealla klikkauksella voi poistaa useamman kuin kaksi korttia
