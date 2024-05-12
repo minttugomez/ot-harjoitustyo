@@ -18,6 +18,7 @@ poetry run invoke start
 Sovellus käynnistyy menu-näkymään:
 
 ![image](https://github.com/minttugomez/ot-harjoitustyo/assets/116456153/187433cc-c700-4ba2-a583-aada36595a8c)
+
 Pelin aloittamiseksi vaaditaan pelaajamäärän valinta ja sitten peli aloitetaan "START"-napista.
 #### Pelivuoron toteuttaminen
 Vuorossa oleva pelaaja on ympyröity:
