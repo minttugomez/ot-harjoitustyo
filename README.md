@@ -6,16 +6,21 @@ Perinteinen muistipeli tietokoneversiona. Muistipelissä on 72 korttia, joissa o
 
 - [määrittelydokumentti](https://github.com/minttugomez/ot-harjoitustyo/tree/master/memory-game/dokumentaatio/maarittelydokumentti.md)
 
+- [testausdokumentti](https://github.com/minttugomez/ot-harjoitustyo/tree/master/memory-game/dokumentaatio/testausdokumentti.md)
+
+- [käyttöohje](https://github.com/minttugomez/ot-harjoitustyo/tree/master/memory-game/dokumentaatio/kayttoohje.md)
+
+- [arkkitehtuuri](https://github.com/minttugomez/ot-harjoitustyo/tree/master/memory-game/dokumentaatio/arkkitehtuuri.md)
+
 - [työaikakirjanpito](https://github.com/minttugomez/ot-harjoitustyo/tree/master/memory-game/dokumentaatio/tyoaikakirjanpito.md)
 
 - [changelog](https://github.com/minttugomez/ot-harjoitustyo/tree/master/memory-game/dokumentaatio/changelog.md)
-
-- [arkkitehtuuri](https://github.com/minttugomez/ot-harjoitustyo/tree/master/memory-game/dokumentaatio/arkkitehtuuri.md)
 
 ## Release
 
 - [Viikko 5](https://github.com/minttugomez/ot-harjoitustyo/releases/tag/viikko5)
 - [Viikko 6](https://github.com/minttugomez/ot-harjoitustyo/releases/tag/viikko6)
+- [Viikko 7](https://github.com/minttugomez/ot-harjoitustyo/releases/tag/viikko7)
 
 ## Asennus
 
