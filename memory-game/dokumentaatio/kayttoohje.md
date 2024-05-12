@@ -23,6 +23,7 @@ Pelin aloittamiseksi vaaditaan pelaajamäärän valinta ja sitten peli aloitetaa
 Vuorossa oleva pelaaja on ympyröity:
 
 ![image](https://github.com/minttugomez/ot-harjoitustyo/assets/116456153/95f88b34-fcdd-4902-bcb4-940edaf074b8)
+
 Omalla vuorollaan pelaaja klikkaa kahta eri korttia yrittäen saada parit.
 Mikäli kortit eivät ole pari, vuoro siirtyy seuraavalle pelaajalle. Jos kortit ovat pari, pelaaja saa uuden vuoron.
 Peli jatkuu kunnes kortit loppuvat
